@@ -1,0 +1,25 @@
+{
+  "name": "oceanic-minima",
+  "displayName": "Oceanic Minima",
+  "description": "Oceanic Next theme with a set of minimal dark workspaces",
+  "version": "0.0.1",
+  "publisher": "dalemartyn",
+  "engines": {
+    "vscode": "^1.12.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Oceanic Minima",
+        "uiTheme": "vs-dark",
+        "path": "./themes/oceanic-minima-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "color": "^1.0.3"
+  }
+}
