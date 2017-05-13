@@ -7,7 +7,7 @@ module.exports = function generateColors(base) {
   var black_80_pc         = "#00000080";
 
   var base_minus_2 = lighten(-2);
-  var base_plus_2  = lighten(2);
+  var base_plus_3  = lighten(3);
   var base_plus_6  = lighten(6);
   var base_medium  = lighten(16);
   var accent       = accentColor();
@@ -174,7 +174,7 @@ module.exports = function generateColors(base) {
      */
 
     // Activity Bar background color.
-    "activityBar.background": base_plus_2,
+    "activityBar.background": base_plus_3,
 
     // Drag and drop feedback color for the Activity Bar items.
     //"activityBar.dropBackground": ,
@@ -235,7 +235,7 @@ module.exports = function generateColors(base) {
     "tab.border": base_minus_2,
 
     // Inactive Tab background color.
-    "tab.inactiveBackground": base_plus_2,
+    "tab.inactiveBackground": base_plus_3,
 
     // Inactive Tab foreground color in an active group.
     //"tab.inactiveForeground": ,
