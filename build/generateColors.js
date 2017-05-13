@@ -210,10 +210,10 @@ module.exports = function generateColors(base) {
      */
 
     // Background color of an editor group. The background color shows up when dragging editor groups around.
-    "editorGroup.background": white,
+    // "editorGroup.background": ,
 
     // Color to separate multiple editor groups from each other.
-    "editorGroup.border": white,
+    // "editorGroup.border": ,
 
     // Background color when dragging editors around.
     //"editorGroup.dropBackground": ,
@@ -235,7 +235,7 @@ module.exports = function generateColors(base) {
     "tab.border": base_minus_2,
 
     // Inactive Tab background color.
-    "tab.inactiveBackground": base_plus_3,
+    "tab.inactiveBackground": base_minus_2,
 
     // Inactive Tab foreground color in an active group.
     //"tab.inactiveForeground": ,
@@ -319,7 +319,7 @@ module.exports = function generateColors(base) {
     //"editorWhitespace.foreground": ,
 
     // Color of the editor indentation guides.
-    "editorIndentGuide.background": base_plus_6,
+    "editorIndentGuide.background": base_plus_3,
 
 
     /*
@@ -581,4 +581,4 @@ module.exports = function generateColors(base) {
 
   return colors;
 
-}
+};
