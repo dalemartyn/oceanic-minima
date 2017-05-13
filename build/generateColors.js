@@ -4,19 +4,13 @@ module.exports = function generateColors(base) {
 
   var white               = "#fff";
   var red                 = "#ff5252";
-  // var accent              = "#b3e5ff";     // hsl(201, 100%, 85%)
-  // var base_medium         = "#455A64";     // hsl(199, 18%, 33%)   // material blue grey 700
-  // var base_plus_6         = "#2d3b43";     // hsl(202, 20%, 22%)
-  // var base_plus_2         = "#253037";     // hsl(203, 20%, 18%)
-  // var base                = "#212b31";     // hsl(203, 20%, 16%)
-  // var base_minus_2        = "#1d252b";     // hsl(206, 19%, 14%)
-  var black80             = "#00000080";
+  var black_80_pc         = "#00000080";
 
   var base_minus_2 = lighten(-2);
-  var base_plus_2 = lighten(2);
-  var base_plus_6 = lighten(6);
-  var base_medium = lighten(16);
-  var accent = accentColor();
+  var base_plus_2  = lighten(2);
+  var base_plus_6  = lighten(6);
+  var base_medium  = lighten(16);
+  var accent       = accentColor();
 
   function lighten(amount) {
     var c = Color(base).hsl();
@@ -33,16 +27,16 @@ module.exports = function generateColors(base) {
   }
 
 
-  /*
-  * https://code.visualstudio.com/docs/getstarted/theme-color-reference
-  */
+   /*
+    * https://code.visualstudio.com/docs/getstarted/theme-color-reference
+    */
 
   var colors = {
 
-  /*
-    * Contrast Colors
-    * The contrast colors are typically only set for high contrast themes. If set, they add an additional border around items across the UI to increase the contrast.
-    */
+    /*
+     * Contrast Colors
+     * The contrast colors are typically only set for high contrast themes. If set, they add an additional border around items across the UI to increase the contrast.
+     */
 
     // An extra border around active elements to separate them from others for greater contrast.
     //"contrastActiveBorder": ,
@@ -51,9 +45,9 @@ module.exports = function generateColors(base) {
     //"contrastBorder": ,
 
 
-  /*
-    * Base Colors
-    */
+    /*
+     * Base Colors
+     */
 
     // Overall border color for focused elements. This color is only used if not overridden by a component.
     "focusBorder": accent,
@@ -62,13 +56,13 @@ module.exports = function generateColors(base) {
     //"foreground": ,
 
     // Shadow color of widgets such as Find/Replace inside the editor.
-    "widget.shadow": black80,
+    "widget.shadow": black_80_pc,
 
 
-  /*
-    * Button Control
-    * A set of colors for button widgets such as **Open Folder** button in the Explorer of a new window.
-    */
+    /*
+     * Button Control
+     * A set of colors for button widgets such as **Open Folder** button in the Explorer of a new window.
+     */
 
     // Button background color.
     //"button.background": ,
@@ -80,10 +74,10 @@ module.exports = function generateColors(base) {
     //"button.hoverBackground": ,
 
 
-  /*
-    * Dropdown Control
-    * A set of colors for all dropdown widgets such as in the Integrated Terminal or the Output panel.
-    */
+    /*
+     * Dropdown Control
+     * A set of colors for all dropdown widgets such as in the Integrated Terminal or the Output panel.
+     */
 
     // Dropdown background.
     //"dropdown.background": ,
@@ -95,10 +89,10 @@ module.exports = function generateColors(base) {
     //"dropdown.foreground": ,
 
 
-  /*
-    * Input Control
-    * Colors for input controls such as in the Search view or the Find/Replace dialog.
-    */
+    /*
+     * Input Control
+     * Colors for input controls such as in the Search view or the Find/Replace dialog.
+     */
     
     // Input box background.
     "input.background": base_plus_6,
@@ -130,12 +124,12 @@ module.exports = function generateColors(base) {
     // Input validation border color for warning severity.
     //"inputValidation.warningBorder": ,
 
-  /*
-    * Scroll Bar Control
-    */
+    /*
+     * Scroll Bar Control
+     */
 
     // Scroll Bar shadow to indicate that the view is scrolled.
-    "scrollbar.shadow": black80,
+    "scrollbar.shadow": black_80_pc,
 
     // Slider background color when active.
     //"scrollbarSlider.activeBackground": ,
@@ -147,10 +141,10 @@ module.exports = function generateColors(base) {
     //"scrollbarSlider.hoverBackground": ,
 
 
-  /*
-    * Lists and Trees
-    * Colors for list and trees like the File Explorer. An active list/tree has keyboard focus, an inactive does not.
-    */
+    /*
+     * Lists and Trees
+     * Colors for list and trees like the File Explorer. An active list/tree has keyboard focus, an inactive does not.
+     */
 
     // List/Tree background color for the selected item when the list/tree is active.
     //"list.activeSelectionBackground": ,
@@ -174,10 +168,10 @@ module.exports = function generateColors(base) {
     //"list.inactiveSelectionBackground": ,
 
 
-  /*
-    * Activity Bar
-    * The Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
-    */
+    /*
+     * Activity Bar
+     * The Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
+     */
 
     // Activity Bar background color.
     "activityBar.background": base_plus_2,
@@ -195,9 +189,9 @@ module.exports = function generateColors(base) {
     "activityBarBadge.foreground": white,
 
 
-  /*
-    * Side Bar
-    * The Side Bar contains views like the Explorer and Search.
+    /*
+     * Side Bar
+     * The Side Bar contains views like the Explorer and Search.
     */
 
     // Side Bar background color.
@@ -210,10 +204,10 @@ module.exports = function generateColors(base) {
     //"sideBarTitle.foreground": ,
 
 
-  /*
-    * Editor Groups & Tabs
-    * Editor Groups are the containers of editors. There can be up to three editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
-    */
+    /*
+     * Editor Groups & Tabs
+     * Editor Groups are the containers of editors. There can be up to three editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
+     */
 
     // Background color of an editor group. The background color shows up when dragging editor groups around.
     "editorGroup.background": white,
@@ -247,28 +241,28 @@ module.exports = function generateColors(base) {
     //"tab.inactiveForeground": ,
 
 
-  /*
-    * Editor Colors
-    * The most prominent editor colors are the token colors that are based on the language grammar installed. These colors are defined by the Color Theme and can (currently) not be customized in the settings. All other colors are listed here:
-    *
-    * Selection colors are visible when selecting one or more characters. In addition to the selection also all regions with the same content are highlighted.
-    *
-    * Word highlight colors are visible when the cursor is inside a symbol or a word. Depending on the language support available for the file type, all matching references and declarations are highlighted and read and write accesses get different colors. If document symbol language support is not available, this falls back to word highlighting.
-    *
-    * Find colors depend on the current find string in the Find/Replace dialog.
-    *
-    * The hover highlight is shown behind the symbol for which a hover is shown.
-    *
-    * The current line is typically shown as either background highlight or a border (not both).
-    *
-    * The link color is visible when clicking on a link.
-    *
-    * The range highlight is visible when selecting a search result.
-    *
-    * To see the editor white spaces, enable **Toggle Render Whitespace**.
-    *
-    * To see the editor indent guides, set editor.renderIndentGuides": true".
-    */
+    /*
+     * Editor Colors
+     * The most prominent editor colors are the token colors that are based on the language grammar installed. These colors are defined by the Color Theme and can (currently) not be customized in the settings. All other colors are listed here:
+     *
+     * Selection colors are visible when selecting one or more characters. In addition to the selection also all regions with the same content are highlighted.
+     *
+     * Word highlight colors are visible when the cursor is inside a symbol or a word. Depending on the language support available for the file type, all matching references and declarations are highlighted and read and write accesses get different colors. If document symbol language support is not available, this falls back to word highlighting.
+     *
+     * Find colors depend on the current find string in the Find/Replace dialog.
+     *
+     * The hover highlight is shown behind the symbol for which a hover is shown.
+     *
+     * The current line is typically shown as either background highlight or a border (not both).
+     *
+     * The link color is visible when clicking on a link.
+     *
+     * The range highlight is visible when selecting a search result.
+     *
+     * To see the editor white spaces, enable **Toggle Render Whitespace**.
+     *
+     * To see the editor indent guides, set editor.renderIndentGuides": true".
+     */
 
     // Editor background color.
     "editor.background": base,
@@ -328,10 +322,10 @@ module.exports = function generateColors(base) {
     "editorIndentGuide.background": base_plus_6,
 
 
-  /*
-    * Diff Editor Colors
-    * For coloring inserted and removed text, use either a background or a border color but not both.
-    */
+    /*
+     * Diff Editor Colors
+     * For coloring inserted and removed text, use either a background or a border color but not both.
+     */
 
     // Background color for inserted text.
     //"diffEditor.insertedTextBackground": ,
@@ -346,14 +340,14 @@ module.exports = function generateColors(base) {
     //"diffEditor.removedTextBorder": ,
 
 
-  /*
-    * Editor Widget Colors
-    * The Editor widget is shown in front of the editor content. Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
-    *
-    * The Debug Exception widget is a peek view that shows in the editor when debug stops at an exception.
-    *
-    * The editor marker view shows when navigating to errors and warnings in the editor (**Go to Next Error or Warning** command).
-    */
+    /*
+     * Editor Widget Colors
+     * The Editor widget is shown in front of the editor content. Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
+     *
+     * The Debug Exception widget is a peek view that shows in the editor when debug stops at an exception.
+     *
+     * The editor marker view shows when navigating to errors and warnings in the editor (**Go to Next Error or Warning** command).
+     */
 
     // Background color of editor widgets, such as Find/Replace.
     //"editorWidget.background": ,
@@ -395,9 +389,9 @@ module.exports = function generateColors(base) {
     //"editorMarkerNavigationWarning.background": ,
 
 
-  /*
-    * Peek View Colors
-    */
+    /*
+     * Peek View Colors
+     */
 
     // Color of the peek view borders and arrow.
     //"peekView.border": ,
@@ -436,10 +430,10 @@ module.exports = function generateColors(base) {
     //"peekViewTitleLabel.foreground": ,
 
 
-  /*
-    * Panel Colors
-    * Panels are shown below the editor area and contain views like Output and Integrated Terminal.
-    */
+    /*
+     * Panel Colors
+     * Panels are shown below the editor area and contain views like Output and Integrated Terminal.
+     */
 
     // Panel background color.
     //"panel.background": ,
@@ -457,10 +451,10 @@ module.exports = function generateColors(base) {
     //"panelTitle.inactiveForeground": ,
 
 
-  /*
-    * Status Bar Colors
-    * The Status Bar is shown in the bottom of the workbench.
-    */
+    /*
+     * Status Bar Colors
+     * The Status Bar is shown in the bottom of the workbench.
+     */
 
     // Standard Status Bar background color.
     "statusBar.background": base_minus_2,
@@ -484,9 +478,9 @@ module.exports = function generateColors(base) {
     //"statusBarItem.prominentHoverBackground": ,
 
 
-  /*
-    * Title Bar Colors (macOS)
-    */
+    /*
+     * Title Bar Colors (macOS)
+     */
 
     // Title Bar background when the window is active. Note that this color is currently only supported on macOS.
     "titleBar.activeBackground": base_minus_2,
@@ -501,10 +495,10 @@ module.exports = function generateColors(base) {
     //"titleBar.inactiveForeground": ,
 
 
-  /*
-    * Notification Dialog Colors
-    * Notifications slide in from the top of the workbench.
-    */
+    /*
+     * Notification Dialog Colors
+     * Notifications slide in from the top of the workbench.
+     */
 
     // Notifications background color.
     //"notification.background": ,
@@ -513,9 +507,9 @@ module.exports = function generateColors(base) {
     //"notification.foreground": ,
 
 
-  /*
-    * Quick Picker
-    */
+    /*
+     * Quick Picker
+     */
 
     // Quick picker (Quick Open) color for grouping borders.
     //"pickerGroup.border": ,
@@ -524,9 +518,9 @@ module.exports = function generateColors(base) {
     //"pickerGroup.foreground": ,
 
 
-  /*
-    * Integrated Terminal Colors
-    */
+    /*
+     * Integrated Terminal Colors
+     */
 
     // 'Black' ANSI color in the terminal.
     //"terminal.ansiBlack": ,
@@ -577,9 +571,9 @@ module.exports = function generateColors(base) {
     //"terminal.ansiYellow": ,
 
 
-  /*
-    * Debug
-    */
+    /*
+     * Debug
+     */
 
     // Debug toolbar background color.
     //"debugToolBar.background": ,
