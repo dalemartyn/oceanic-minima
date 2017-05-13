@@ -1,14 +1,35 @@
-module.exports = function generateColors() {
+var Color = require('color');
+
+module.exports = function generateColors(base) {
 
   var white               = "#fff";
   var red                 = "#ff5252";
-  var accent              = "#b3e5ff";     // hsl(201, 100%, 85%)
-  var base_medium         = "#455A64";     // hsl(199, 18%, 33%)   // material blue grey 700
-  var base_plus_4         = "#2d3b43";     // hsl(202, 20%, 22%)
-  var base_plus_2         = "#253037";     // hsl(203, 20%, 18%)
-  var base                = "#212b31";     // hsl(203, 20%, 16%)
-  var base_minus_2        = "#1d252b";     // hsl(206, 19%, 14%)
+  // var accent              = "#b3e5ff";     // hsl(201, 100%, 85%)
+  // var base_medium         = "#455A64";     // hsl(199, 18%, 33%)   // material blue grey 700
+  // var base_plus_4         = "#2d3b43";     // hsl(202, 20%, 22%)
+  // var base_plus_2         = "#253037";     // hsl(203, 20%, 18%)
+  // var base                = "#212b31";     // hsl(203, 20%, 16%)
+  // var base_minus_2        = "#1d252b";     // hsl(206, 19%, 14%)
   var black80             = "#00000080";
+
+  var base_minus_2 = lighten(-2);
+  var base_plus_2 = lighten(2);
+  var base_plus_4 = lighten(4);
+  var base_medium = lighten(16);
+  var accent = accentColor();
+
+  function lighten(amount) {
+    var c = Color(base).hsl();
+    c.color[2] += amount;
+    return c.hex();
+  }
+
+  function accentColor() {
+    var c = Color(base).hsl();
+    c.color[1] = 100;
+    c.color[2] = 85;
+    return c.hex();
+  }
 
 
   /*
