@@ -1,9 +1,9 @@
 var fs = require('fs');
 var generate = require('./generateColors');
 
-var colors = generate("#212b31"); // blue grey
-var colors = generate("#213130"); // green
-var colors = generate("#212f31"); // cyan
+var colors = generate("#212b31"); // blue grey 203
+// var colors = generate("#213130"); // green
+// var colors = generate("#212f31"); // cyan
 
 var settings = {
   "workbench.colorCustomizations": colors

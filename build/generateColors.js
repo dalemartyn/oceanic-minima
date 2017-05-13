@@ -6,7 +6,7 @@ module.exports = function generateColors(base) {
   var red                 = "#ff5252";
   // var accent              = "#b3e5ff";     // hsl(201, 100%, 85%)
   // var base_medium         = "#455A64";     // hsl(199, 18%, 33%)   // material blue grey 700
-  // var base_plus_4         = "#2d3b43";     // hsl(202, 20%, 22%)
+  // var base_plus_6         = "#2d3b43";     // hsl(202, 20%, 22%)
   // var base_plus_2         = "#253037";     // hsl(203, 20%, 18%)
   // var base                = "#212b31";     // hsl(203, 20%, 16%)
   // var base_minus_2        = "#1d252b";     // hsl(206, 19%, 14%)
@@ -14,7 +14,7 @@ module.exports = function generateColors(base) {
 
   var base_minus_2 = lighten(-2);
   var base_plus_2 = lighten(2);
-  var base_plus_4 = lighten(4);
+  var base_plus_6 = lighten(6);
   var base_medium = lighten(16);
   var accent = accentColor();
 
@@ -25,9 +25,10 @@ module.exports = function generateColors(base) {
   }
 
   function accentColor() {
-    var c = Color(base).hsl();
-    c.color[1] = 100;
-    c.color[2] = 85;
+    var c = Color(base).hsv();
+    c.color[1] = 50;
+    c.color[2] = 100;
+    console.log(c);
     return c.hex();
   }
 
@@ -100,7 +101,7 @@ module.exports = function generateColors(base) {
     */
     
     // Input box background.
-    "input.background": base_plus_4,
+    "input.background": base_plus_6,
     
     // Input box border.
     //"input.border": ,
@@ -324,7 +325,7 @@ module.exports = function generateColors(base) {
     //"editorWhitespace.foreground": ,
 
     // Color of the editor indentation guides.
-    "editorIndentGuide.background": base_plus_4,
+    "editorIndentGuide.background": base_plus_6,
 
 
   /*
