@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const theme = {
-  colors: require('./generateColors')(),
+  colors: require('./generateColors')('#212b31'),
   tokenColors: require('../themes/oceanic-charcoal.json').tokenColors
 };
 

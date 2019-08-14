@@ -93,34 +93,34 @@ module.exports = function generateColors(base) {
      * Input Control
      * Colors for input controls such as in the Search view or the Find/Replace dialog.
      */
-    
+
     // Input box background.
     "input.background": base_plus_6,
-    
+
     // Input box border.
     //"input.border": ,
-    
+
     // Input box foreground.
     //"input.foreground": ,
-    
+
     // Border color of activated options in input fields.
     //"inputOption.activeBorder": ,
-    
+
     // Input validation background color for error severity.
     //"inputValidation.errorBackground": ,
-    
+
     // Input validation border color for error severity.
     //"inputValidation.errorBorder": ,
-    
+
     // Input validation background color for information severity.
     //"inputValidation.infoBackground": ,
-    
+
     // Input validation border color for information severity.
     //"inputValidation.infoBorder": ,
-    
+
     // Input validation background color for information warning.
     //"inputValidation.warningBackground": ,
-    
+
     // Input validation border color for warning severity.
     //"inputValidation.warningBorder": ,
 
@@ -577,6 +577,13 @@ module.exports = function generateColors(base) {
 
     // Debug toolbar background color.
     //"debugToolBar.background": ,
+
+
+    /*
+     * Remote Debugging Status Bar
+     */
+    "statusBarItem.remoteBackground": base_minus_2,
+    // "statusBarItem.remoteForeground": ,
   };
 
   return colors;

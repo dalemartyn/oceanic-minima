@@ -9,6 +9,7 @@ var colors = generate("#212b31"); // blue grey 203
 // var colors = generate("#312621"); // orange
 // var colors = generate("#281e1b"); // orange
 // var colors = generate("#212121"); // grey
+// var colors = generate("#351e1d"); // red
 
 var settings = {
   "workbench.colorCustomizations": colors

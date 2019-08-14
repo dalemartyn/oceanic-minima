@@ -1,24 +1,23 @@
 {
   "colors": {
-    "focusBorder": "#b3e5ff",
+    "focusBorder": "#80CFFF",
     "widget.shadow": "#00000080",
-    "input.background": "#2d3b43",
+    "input.background": "#2D3B43",
     "scrollbar.shadow": "#00000080",
-    "activityBar.background": "#253037",
+    "activityBar.background": "#27333A",
     "activityBarBadge.background": "#ff5252",
     "activityBarBadge.foreground": "#fff",
-    "sideBar.background": "#1d252b",
-    "editorGroup.background": "#fff",
-    "editorGroup.border": "#fff",
-    "editorGroupHeader.tabsBackground": "#1d252b",
-    "tab.border": "#1d252b",
-    "tab.inactiveBackground": "#253037",
+    "sideBar.background": "#1D262B",
+    "editorGroupHeader.tabsBackground": "#1D262B",
+    "tab.border": "#1D262B",
+    "tab.inactiveBackground": "#1D262B",
     "editor.background": "#212b31",
-    "editorLineNumber.foreground": "#455A64",
-    "editorIndentGuide.background": "#2d3b43",
-    "statusBar.background": "#1d252b",
+    "editorLineNumber.foreground": "#425662",
+    "editorIndentGuide.background": "#27333A",
+    "statusBar.background": "#1D262B",
     "statusBar.debuggingBackground": "#ff5252",
-    "titleBar.activeBackground": "#1d252b"
+    "titleBar.activeBackground": "#1D262B",
+    "statusBarItem.remoteBackground": "#1D262B"
   },
   "tokenColors": [
     {
