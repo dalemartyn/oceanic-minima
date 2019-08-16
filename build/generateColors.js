@@ -466,7 +466,7 @@ module.exports = function generateColors(base) {
     //"statusBar.foreground": ,
 
     // Status Bar background color when no folder is opened. - "statusBarItem.activeBackground": ,Status Bar item background color when clicking.
-    //"statusBar.noFolderBackground": ,
+    "statusBar.noFolderBackground": base_minus_2,
 
     // Status Bar item background color when hovering.
     //"statusBarItem.hoverBackground": ,

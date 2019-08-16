@@ -16,6 +16,7 @@
     "editorIndentGuide.background": "#27333A",
     "statusBar.background": "#1D262B",
     "statusBar.debuggingBackground": "#ff5252",
+    "statusBar.noFolderBackground": "#1D262B",
     "titleBar.activeBackground": "#1D262B",
     "statusBarItem.remoteBackground": "#1D262B"
   },
